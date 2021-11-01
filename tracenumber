@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Enter 10 digit mobile number:"
+echo "Enter 10 digit mobile number:"0763135576
 read number
 url=`echo "http://trace.bharatiyamobile.com/?numb="$number`
 wget -q -U Mozilla -O new $url
