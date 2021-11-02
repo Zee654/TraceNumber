@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "Enter 10 digit mobile number:"
+echo "Enter 10 digit mobile number:"0763135576
 read number
-url=`echo "http://trace.bharatiyamobile.com/?numb="$number`
+url=`echo "http://trace.bharatiyamobile.com/?numb="$number`0763135576
 wget -q -U Mozilla -O new $url
 echo `cat new | grep "Location :" | sed -e :a -e 's/<[^>]*>//g;/</N;//ba'`
 echo `cat new | grep "Operator :" | sed -e :a -e 's/<[^>]*>//g;/</N;//ba'`
